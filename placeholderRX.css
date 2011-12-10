@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* These styles are important to the functionality of the script! */
+
+.inputSpan {
+	display:block;
+	position:relative;
+	width:inherit;	
+}
+
+.inputText {
+	margin:0px;
+	padding:0px;
+	position:absolute;
+	bottom:0px;
+	background-image:url(spacer.gif);
+	cursor:text;
+}
+
+.input {
+	margin:0px;
+}
+
+/* End important styles. These styles are editable. Use padding-left to indent your input text! Text-indent wont indent your placeholders. It also has an annoying bug on most browsers where it plants the text cursor to the left most border until you actually start typing.*/
+
+#yourForm {
+	width:320px;
+}
+
+.inputSpan {
+	margin:0px 0px 8px 0px; 
+	padding:0px	
+}
+
+.input {
+	padding-left:6px;
+	width:312px;
+	height:32px;
+	border-width:1px;
+	border-style:inset;
+	border-radius:5px;
+	-moz-border-radius:5px;	
+	-webkit-border-radius:5px;	
+}
+
+.input, .inputText {
+	font: 16px Helvetica Neue,Arial,Sans-serif;
+	display:block;
+}
