@@ -8,7 +8,7 @@
 	
 	- Note - You must use the PlaceholderRX form and CSS template.
 	
-	Copyright 2011 Jacob Smit - www.jacobsmits.com
+	Copyright 2011 Jacob Smits - www.jacobsmits.com
 	If you use this script and like it, please donate on the scripts webpage! 
 */	
 
@@ -21,10 +21,10 @@ jQuery.fn.placeholderRX = function(options) {
 	
 	var $this = $(this);
 	
-	$this.children('.inputSpan').each(function() {
-		var $input = $(this).children('.input');
+	$this.children('span').each(function() {
+		var $input = $(this).children();
 		var revertColor = $input.css('background-color');
-		if ($input.attr('type') == 'text' || $input.attr('type') == 'password'){
+		if ($input.attr('type') == 'text' || $input.attr('type') == 'password' || $input.attr('type') == 'textarea'){
 			//Set up vars
 			var width = $input.outerWidth();
 			var innerWidth = $input.innerWidth();

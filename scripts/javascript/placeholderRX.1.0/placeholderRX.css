@@ -3,7 +3,7 @@
 
 /* These styles are important to the functionality of the script! */
 
-.inputSpan {
+.rxForm span {
 	display:block;
 	position:relative;
 	width:inherit;	
@@ -18,7 +18,7 @@
 	cursor:text;
 }
 
-.input {
+.rxForm input {
 	margin:0px;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .input {
-	padding-left:6px;
+	padding-left:6px; /* Use padding-left to indent your input text. Text-indent will not work for the placeholder text, and it also doesn't work as good as the cursor doesn't indent before the user starts typing */
 	width:312px;
 	height:32px;
 	border-width:1px;

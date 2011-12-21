@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="scripts/javascript/placeholderRX.1.0/placeholderRX.css" type="text/css" />
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+<title>placeholderRX Demo Page</title>
+<script type="text/javascript" src="scripts/javascript/placeholderRX.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/javascript/placeholderRX.1.0/jquery.placeholderRX.js"></script>
+</head>
+
+<body>
+	<h1>placeholderRX Demo Page</h1>
+    <p>This page shows a full, working demo of the script. Use it to quickly get you started using placeholderRX.</p>    
+    <form id="testForm" class="rxForm" name="testForm">
+        <span class="inputSpan">
+            <input value="" class="input" title="First name" id="firstName" name="firstName" type="text" />
+        </span>
+        <span class="inputSpan">
+            <input value="" class="input" title="Last name" id="lastName" name="lastName" type="text" />
+        </span>
+        <span class="inputSpan">
+            <input value="" class="input" title="Email" id="email" name="email" type="text" />
+        </span>
+        <span class="inputSpan">
+            <button type="submit" class="submitButton" title ="Message" id="signSubmit" name="signSubmit" >Submit!</button> 
+        </span>    
+    </form>
+	<script type="text/javascript">
+	//Run the function on window load to avoid browser autocompletion issues.
+		$(window).load(function() {
+			$('#testForm').placeholderRX({textColor: '#999', hoverColor: '#FBFBFB', addClass: 'styleInputText'});
+		});
+	</script></body>
+</html>
